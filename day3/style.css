@@ -1,0 +1,31 @@
+body{
+    font-family: Arial,sans-serif;
+    background-image:url(https://cdn.pixabay.com/photo/2020/01/30/23/21/cafe-4806787_1280.jpg);
+}
+h1,p{
+    color: white;
+    text-align: center;
+}
+h2{
+    color: rgb(52, 50, 177);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+ol{
+    margin: 10px;
+    padding: 20px;
+    color: darkcyan;
+}
+li{
+    margin :10px auto;
+    padding: 10px;
+    color:aliceblue;
+}
+button{
+    background-color: darkviolet;
+    color: gold;
+    font-style: normal;
+
+}
+#menu{
+    background-color: rgb(67, 201, 201);
+}
