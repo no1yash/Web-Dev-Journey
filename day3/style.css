@@ -12,7 +12,7 @@ body {
 
 /* dark overlay so text is readable */
 .overlay {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.451);
     min-height: 100vh;
     padding: 40px;
 }
