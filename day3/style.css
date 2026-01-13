@@ -1,31 +1,62 @@
-body{
-    font-family: Arial,sans-serif;
-    background-image:url(https://cdn.pixabay.com/photo/2020/01/30/23/21/cafe-4806787_1280.jpg);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://as1.ftcdn.net/jpg/02/89/97/90/1000_F_289979071_dP16zHOQ9B6CCHD6zlzrh8qLs7bBDLTh.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
 }
-h1,p{
+
+/* dark overlay so text is readable */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+h1 {
     color: white;
     text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
 }
-h2{
-    color: rgb(52, 50, 177);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-ol{
-    margin: 10px;
-    padding: 20px;
-    color: darkcyan;
-}
-li{
-    margin :10px auto;
-    padding: 10px;
-    color:aliceblue;
-}
-button{
-    background-color: darkviolet;
-    color: gold;
-    font-style: normal;
 
+.tagline {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
 }
-#menu{
-    background-color: rgb(67, 201, 201);
+
+.menu {
+    margin-left: 40px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+}
+
+ul {
+    list-style: disc;
+    color: white;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    background-color: orange;
+    border: none;
+    cursor: pointer;
 }
