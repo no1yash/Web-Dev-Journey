@@ -1,0 +1,26 @@
+header{
+  background-color: #F230E4;
+  padding: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  max-width: 750px;
+  text-align: center;
+}
+main{
+  background-color: white;
+}
+section{
+  margin-left: 20px auto;
+  padding: 10px 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #1BF5E9;
+  margin-bottom: 15px;
+  color: black;
+  width: 500px;
+}
+section h2{
+  color :#F52A1B;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
