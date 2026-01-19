@@ -1,0 +1,33 @@
+.card1{
+    text-align: center;
+    background-color: lightgreen;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 20px 2px 50px 2px;
+    padding: 2px;
+}
+.card2{
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 20px 2px 700px 2px;
+    padding: 2px;
+}
+.card3{
+    text-align: center;
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 20px 2px 50px 2px;
+    padding: 2px;
+}
+.card1,
+.card2, 
+.card3{
+    display:inline-block;
+    vertical-align: top;
+}
