@@ -1,0 +1,44 @@
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    background-color: lightpink;
+    padding: 0 20px;
+}
+.nav li{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav li:hover{
+    background-color: red;
+    color: white;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.card{
+    border: 1px solid black;
+    width : auto;
+    text-align: center;
+    background-color: lightgreen;
+}
+.card:hover{
+    background-color: green;
+    color: white;
+}
+.card{
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.card:hover{
+    transform:scale(1.05);
+}
