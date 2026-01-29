@@ -1,0 +1,21 @@
+h1{
+    color:gold;
+    text-align: center;
+
+}
+
+.card{
+    border: 1px solid black;
+    width: 400px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px; 
+    margin: 100px auto;
+}
+.button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgb(105, 104, 106);
+}
