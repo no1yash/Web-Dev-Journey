@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 40px;
+}
+
+.happy{
+    background-color: #fff3b0;
+    font-family: cursive;
+}
+
+.normal{
+    background-color: #e0e0e0;
+}
+
+.sad{
+    background-color: #2c2c2c;
+    font-family: monospace;
+    color: white;   
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    display: inline-flex;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
