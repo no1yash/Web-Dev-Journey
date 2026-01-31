@@ -1,0 +1,35 @@
+    body{
+        margin: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .light{
+        background-image: url(https://img.freepik.com/free-vector/modern-abstract-white-minimal-background_84443-8318.jpg?t=st=1769875055~exp=1769878655~hmac=61faf893691ee9b59f3ed76c005fedbc00e2dd95bd83f4c0ac2215bbaf8d7ee3&w=1480);
+        color: black;
+    }
+
+    .dark{
+        background-image: url(https://img.freepik.com/free-photo/milky-way-full-stars-space_181624-2599.jpg?t=st=1769875053~exp=1769878653~hmac=964da3081a49f3df69b2f6db2be81734e6a279854537d2155874e3cec6f7172c&w=1480);
+        color: white;
+    }
+
+    .card{  
+        border-radius: 6px;
+        text-align: center;
+        padding: 20px;
+        background: lightgray;
+    }
+
+    .dark .card{
+        background: #1f1f1f;
+    }
+
+    button{
+        padding: 20px 35px;
+        cursor: pointer;
+        font-size: 16px;
+    }
