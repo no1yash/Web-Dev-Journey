@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    transition: backgroung 0.4s ease;
+}
+
+.card{
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+button{
+    padding: 10px;
+    color: aquamarine;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
