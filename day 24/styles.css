@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: bisque;
+    color: brown;
+    box-shadow: 0 20px 35px rgb(235, 179, 106);
+
+    transition: 
+        background 0.4s ease,
+        color 0.5s ease,
+        transform 0.5s ease;
+
+}
+
+button{
+    padding: 10px;
+    border: solid white;
+    border-radius: 10px;
+    color: palevioletred;
+    background-color: gainsboro;
+    font-style: oblique;
+    box-shadow: 10px 13px 20px red;
+    cursor: pointer;
+}
+
+body.light {
+    background: #fffefe;
+}
+
+body.dark {
+    background: #222;
+}
+
+body.light .card {
+    background: #ffffff;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
