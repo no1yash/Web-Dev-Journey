@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?_gl=1*lm5czs*_ga*ODk1MjYyNjA1LjE3NzAyMTc4NzA.*_ga_8JE65Q40S6*czE3NzAyMTc4NzAkbzEkZzEkdDE3NzAyMTc4NzckajUzJGwwJGgw");
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    border: 6px solid color-mix(in shorter hue, red 50%, blue 50%);
+    color: color-mix(in shorter hue, red 50%, blue 50%);
+
+    background: rgba(255,255,255,0.8);
+
+    box-shadow: 0 10px 25px 
+        color-mix(in shorter hue, yellow 50%, green 50%);
+}
+
+.card h1{
+    color: color-mix(in shorter hue, orange 60%, purple 40%);
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid color-mix(in shorter hue, red 50%, blue 50%);
+    
+    background-color: color-mix(in shorter hue, yellow 40%, green 60%);
+    color: color-mix(in shorter hue, red 60%, blue 40%);
+
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover{
+    background-color: color-mix(in shorter hue, green 50%, yellow 50%);
+    box-shadow: 0 6px 15px 
+        color-mix(in shorter hue, green 60%, blue 40%);
+    transform: translateY(-2px);
+}
+
+button:active{
+    transform: translateY(0);
+    box-shadow: 0 3px 8px 
+        color-mix(in shorter hue, green 70%, blue 30%);
+}
