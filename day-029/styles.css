@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:  white;
+    color: black;
+    box-shadow: 0 14px 20px lightblue;
+    transition: 0.5s ease;
+}
+
+button{
+    border: none;
+    background-color: black;
+    color: darkgray;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dark .card{
+    background-color: #222;
+    color: white;
+}
+
+.dark{
+    background-color: #222;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
