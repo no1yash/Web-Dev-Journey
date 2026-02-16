@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    transition: 0.4s ease;
+}
+
+.container{
+    width: 300px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 16px 10px gray;
+}
+
+h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.buttons{
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+.inc{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.dec{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.res{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
