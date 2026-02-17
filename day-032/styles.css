@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: top;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px blue;
+    transition: 0.5s ease;
+    background-color: rgb(97, 202, 237);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+button{
+    padding: 5px;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
