@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.container{
+    width: 300px;
+    min-height: 150px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px gold;
+    padding: 15px;
+    gap: 20px;
+}
+
+
+button{
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background-color: darkred;
+}
+
