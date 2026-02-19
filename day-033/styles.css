@@ -34,5 +34,6 @@ button{
 
 .delete-btn:hover{
     background-color: darkred;
+    transform: scale(1.2s);
 }
 
