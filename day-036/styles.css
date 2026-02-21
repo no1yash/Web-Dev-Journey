@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: scale(0.5s);
+    font-family: "Sofia", sans-serif;
+}
+
+.container{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(180, 242, 180);
+    box-shadow: 0 10px 19px green;
+}   
+
+input{
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.addbtn{
+    background-color: darkgreen;
+    padding: 8px 16px;
+    border-radius: 200px;
+    color: white;
+    cursor: pointer;
+}
+
+li button{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+    background-color: lightgreen;
+}
+
+.completed{
+    text-decoration: line-through;    
+    opacity: 0.6;
+}
+
