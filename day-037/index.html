@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>To - Do Plus</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>My Task Manager</h1>
+            
+            <div class="top-section">
+                <div class="filters">
+
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="all" checked>
+                            <span>All</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="completed">
+                            <span>Completed</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="pending">
+                            <span>Pending</span>
+                    </label>
+
+                </div>
+
+
+                <div class="summary">
+                    <p>Completed: <span id="completedCount"></span></p>
+                    <p>Total: <span id="totalCount"></span></p>
+                    <p>Pending: <span id="pendingCount"></span></p>
+                </div>
+            </div>
+
+            <div class="inputsection">
+                <input type="text" id="taskText" placeholder="Enter your task">
+                <button id="addBtn" class="addBtn">+</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <button id="clearCompleted" class="clearCompleted">Clear Completed</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html> 

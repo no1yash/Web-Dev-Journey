@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: scale(0.5s);
+    font-family: "Sofia", sans-serif;
+}
+
+.container{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(238, 128, 232);
+    box-shadow: 0 10px 19px rgb(236, 87, 224);
+}   
+
+input{
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.addBtn{
+    background-color: darkgreen;
+    padding: 8px 16px;
+    border-radius: 200px;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-option input {
+  display: none;
+}
+
+.filter-option span {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.filter-option input:checked + span {
+  background-color: darkgreen;
+  color: white;
+  border-color: darkgreen;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+li button{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+    background-color: lightgreen;
+}
+
+.completed{
+    text-decoration: line-through;    
+    opacity: 0.6;
+}
+
+.clearCompleted{
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
