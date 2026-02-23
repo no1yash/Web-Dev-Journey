@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background-color: cadetblue;
+}
+
+.container{
+    width: 400px;
+    padding: 20px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px gray;
+    background-color: lightblue;
+}
+
+h1{
+    text-align: center;
+}
+
+.filter-option input {
+  display: none;
+}
+
+.filter-option span {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.filter-option input:checked + span {
+  background-color: rgb(53, 185, 234);
+  color: white;
+  border-color: rgb(0, 53, 100);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+input{
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.addBtn{
+    padding: 10px 15px;
+    font-size: 10px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.clearCompleted{
+    justify-content: center;
+    border-radius: 15px;
+    padding: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+li button{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+    background-color: lightgreen;
+}
