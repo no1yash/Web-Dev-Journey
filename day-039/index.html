@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 39 - To Do</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>To dO</h1>
+            
+            <div class="top-section">
+
+                <div class="filters">
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="all">
+                        <span>All</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="completed">
+                        <span>Completed</span>
+                    </label>
+
+                    <label class="filter-option">
+                        <input type="radio" name="filter" value="pending">
+                        <span>Pending</span>
+                    </label>
+                </div>
+
+                <div class="counts">
+                    <p>All: <span id="allcount"></span></p>
+                    <p>Completed: <span id="completedCount"></span></p>
+                    <p>Pending: <span id="pendingCount"></span></p>
+                </div>
+
+            </div>
+
+            <div class="inputsection">
+                <input type="text" id="taskinput" placeholder="Enter the task">
+                <button id="addBtn" class="addBtn">+</button>
+            </div>
+
+            <ul id="tasklist" class="tasklist"></ul>
+
+            <button id="clearCompleted" class="clearCompleted">Clear Completed</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

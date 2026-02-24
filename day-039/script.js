@@ -1,0 +1,174 @@
+const taskInput = document.getElementById("taskinput");
+const addBtn = document.getElementById("addBtn");
+const taskList = document.getElementById("tasklist");
+
+const allCount = document.getElementById("allcount");
+const completedCount = document.getElementById("completedCount");
+const pendingCount = document.getElementById("pendingCount");
+
+const clearCompleted = document.getElementById("clearCompleted");
+const filterRadios = document.querySelectorAll('input[name="filter"]');
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let currentFilter = "all";
+
+function saveTasks(){
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function updateCounts(){
+    allCount.textContent = tasks.length;
+
+    const completed = tasks.filter(t => t.completed);
+    const pending = tasks.filter(t => !t.completed);
+
+    completedCount.textContent = completed.length;
+    pendingCount.textContent = pending.length;
+
+    if(tasks.some(t => t.completed)){
+        clearCompleted.style.display = "block";
+    } else {
+        clearCompleted.style.display = "none";
+    }
+}
+
+function renderTasks(){
+
+    taskList.innerHTML = "";
+
+    let filteredTasks = tasks;
+
+    if(currentFilter === "completed"){
+        filteredTasks = tasks.filter(t => t.completed);
+    }
+
+    if(currentFilter === "pending"){
+        filteredTasks = tasks.filter(t => !t.completed);
+    }
+
+    filteredTasks.forEach((task) => {
+       
+        const li = document.createElement("li");
+        li.style.display = "flex";
+        li.style.justifyContent = "space-between";
+        li.style.marginBottom = "10px";
+
+        const span = document.createElement("span");
+        span.textContent = task.text;
+
+        if(task.completed){
+            li.style.textDecoration = "line-through";
+            li.style.color = "gray";
+        }
+
+        const buttonContainer = document.createElement("div");
+
+        const editBtn = document.createElement("button");
+        editBtn.textContent = "✏";
+
+        editBtn.addEventListener("click", () => {
+            if(editBtn.textContent === "✏"){
+
+                const input = document.createElement("input");
+                input.type = "text";
+                input.value = task.text;
+
+                li.replaceChild(input, span);
+                
+                editBtn.textContent = "Save";
+            } else {
+
+                const input = li.querySelector("input");
+                const newText = input.value.trim();
+
+                if (newText !== "") {
+                    task.text = newText;
+                }
+
+                saveTasks();
+                updateCounts();
+                renderTasks();
+            }
+        });
+
+        const completedBtn = document.createElement("button");
+        completedBtn.textContent = "✔";
+
+        completedBtn.addEventListener("click", () => {
+            task.completed = !task.completed;
+
+            saveTasks();
+            updateCounts();
+            renderTasks();
+        });
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "✖";
+
+        deleteBtn.addEventListener("click", () => {
+            tasks = tasks.filter(t => t !== task);
+            saveTasks();
+            updateCounts();
+            renderTasks();
+        });
+
+        buttonContainer.appendChild(completedBtn);
+        buttonContainer.appendChild(editBtn);
+        buttonContainer.appendChild(deleteBtn);
+
+        li.appendChild(span);
+        li.appendChild(buttonContainer);
+
+        taskList.appendChild(li);
+    });    
+}
+
+taskInput.addEventListener("input", () => {
+    if (taskInput.value.trim() === "") {
+        addBtn.style.display = "none";
+    } else {
+        addBtn.style.display = "inline-block";
+    }
+});
+
+addBtn.addEventListener("click", () => {
+
+    const text = taskInput.value.trim();
+
+    if(text === "") return;
+
+    tasks.push({
+        text: text,
+        completed: false
+    });
+
+    taskInput.value = "";
+
+    saveTasks();
+    updateCounts();
+    renderTasks();
+});
+
+taskInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && taskInput.value.trim() !== "") {
+        addBtn.click();
+    }
+});
+
+
+filterRadios.forEach(radio => {
+  radio.addEventListener("change", function () {
+    currentFilter = this.value;
+    renderTasks();
+  });
+});
+
+clearCompleted.addEventListener("click", () => {
+  tasks = tasks.filter(task => !task.completed);
+  saveTasks();
+  updateCounts();
+  renderTasks();
+});
+
+updateCounts();
+renderTasks();
