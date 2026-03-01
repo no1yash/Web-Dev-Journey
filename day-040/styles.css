@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 360px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: bisque;
+    box-shadow: 0 20px 30px rgba(139, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ================= TITLE ================= */
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* ================= TOP SECTION ================= */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Filters (Left Side) */
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Hide radio button */
+.filter-option input {
+    display: none;
+}
+
+/* Style filter buttons */
+.filter-option span {
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 6px 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.filter-option span:hover {
+    transform: scale(1.05);
+}
+
+/* Active filter */
+.filter-option input:checked + span {
+    background-color: black;
+    color: white;
+}
+
+/* Summary (Right Side) */
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* ================= INPUT SECTION ================= */
+
+.inputsection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#tasktext {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}
+
+/* Add Button */
+.addBtn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.addBtn:hover {
+    transform: scale(1.1);
+}
+
+/* ================= TASK LIST ================= */
+
+.tasklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background-color: lightblue;
+}
+
+li button {
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* ================= CLEAR BUTTON ================= */
+
+.clearCompleted {
+    align-self: center;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.clearCompleted:hover {
+    transform: scale(1.08);
+}
